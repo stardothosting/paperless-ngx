@@ -56,10 +56,10 @@ RUN apt-get update \
 
 # copy scripts
 # this fixes issues with imagemagick and PDF
-COPY scripts/imagemagick-policy.xml /etc/ImageMagick-6/policy.xml
-COPY scripts/gunicorn.conf.py ./
-COPY scripts/supervisord.conf /etc/supervisord.conf
-COPY scripts/docker-entrypoint.sh /sbin/docker-entrypoint.sh
+COPY docker/imagemagick-policy.xml /etc/ImageMagick-6/policy.xml
+COPY docker/gunicorn.conf.py ./
+COPY docker/supervisord.conf /etc/supervisord.conf
+COPY docker/docker-entrypoint.sh /sbin/docker-entrypoint.sh
 
 # copy app
 COPY src/ ./src/
