@@ -102,7 +102,8 @@ export class SettingsService {
       {code: "pt-pt", name: $localize`Portuguese`, englishName: "Portuguese", dateInputFormat: "dd/mm/yyyy"},
       {code: "ro-ro", name: $localize`Romanian`, englishName: "Romanian", dateInputFormat: "dd.mm.yyyy"},
       {code: "ru-ru", name: $localize`Russian`, englishName: "Russian", dateInputFormat: "dd.mm.yyyy"},
-      {code: "sv-se", name: $localize`Swedish`, englishName: "Swedish", dateInputFormat: "yyyy-mm-dd"}
+      {code: "sv-se", name: $localize`Swedish`, englishName: "Swedish", dateInputFormat: "yyyy-mm-dd"},
+      {code: "zh-cn", name: $localize`Chinese Simplified`, englishName: "Chinese Simplified", dateInputFormat: "yyyy-mm-dd"}
     ]
 
     // Sort languages by localized name at runtime
